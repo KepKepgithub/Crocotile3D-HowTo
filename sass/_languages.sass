@@ -1,0 +1,40 @@
+@media(min-width: 1px)
+    .language_selection
+        order: -1
+        margin-bottom: 1rem
+        .element
+            padding: 0
+        .selected,.option
+            padding: .5rem 2.5rem .5rem 1rem
+            border: 1px solid #e8eddf
+            border: 1px solid #e8eddf
+            color: #e8eddf
+            background: #333533
+            width: 5rem
+            font-weight: bold
+            letter-spacing: .1rem
+            &:hover,&:active
+                cursor: pointer
+                filter: brightness(0.9)
+        .selected
+            position: relative
+            color: #f5cb5c
+            &::after
+                content: "▶"
+                position: absolute
+                width: 2rem
+                height: 2rem
+                display: flex
+                justify-content: center
+                align-items: center
+                transform: rotate(90deg)
+                right: 0
+                top: calc( 1rem - .5rem )
+        .option_wrap
+            height: 0
+            overflow: hidden
+            position: relative
+
+@media(min-width: 1024px)
+    .language_selection
+        order: 0
